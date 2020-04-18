@@ -161,6 +161,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 .section-heading{
 
@@ -170,7 +173,7 @@ body {
 .latest-release-container{
     margin-top: 4%;
     width: 80%;
-    height: 500px;
+    /* height: 500px; */
     /* background-color: rgba(221, 244, 168, 0.12); */
    
 }
@@ -178,18 +181,25 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 .square-card{
+    /* flex-shrink: 1; */
+    /* flex-grow: 1; */
+    flex-basis: 100%;
+    /* min-width: 500px; */
     margin: 10px 1px;
     /* max-width: 100%; */
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:space-between ;
     /* align-items: center; */
 }
 .album-image-box{
     max-width: 100px;
     max-height: 100px;
-    margin : 20px
+    margin : 10px
 }
 
 .album-image-box img{
@@ -202,6 +212,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 10px;
+    line-height: 1.8rem;
+    flex-shrink: 1;
+
+}
+.album-details-release h5{
+    font-weight: 400;
 }
 .latest-side-controls{
     margin: 0 40px;
@@ -211,10 +227,84 @@ body {
     text-decoration: none;
     color: white;
 }
- /* Latest Release Section Ends */
+.duration{
+    font-weight: 400;
+}
+
+
+@media screen and (min-width: 768px) {
+    .square-card{
+        flex-basis: 45%;
+    }
+
+.album-image-box{
+    min-width: 60px;
+    flex-shrink: 1;
+}
+
+}
+    
+    
+/* Latest Release Section Ends */
 
 
 
+
+/* Popular Artists */
+.popular-artists{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-content: center;
+}
+.row-container{
+    /* margin: 15% ; */
+    margin-top: 5%;
+}
+.row-container ul{
+   margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row-container ul li{
+    list-style-type: none;
+    margin: 1%;
+    /* overflow-x: scroll; */
+}
+.artist-box{
+    max-width: 100px;
+    max-height: 100px;
+
+}
+.autohide{
+    display: none;
+}
+.artist-box a img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+.artist-frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 1%;
+    /* align-content: center; */
+}
+.artist-frame h4{
+    /* font-size: 1.3rem; */
+    font-weight: 400;
+}
+
+@media screen and (min-width:768px){
+    .autohide{
+        display: block;
+    }
+}
+
+/* Popualar Artist ENDS */
 
 
 
@@ -369,11 +459,10 @@ body {
 
     
     .left-container {
-        
-    
-
+ 
     flex-basis: 90%;
     flex-grow: 2;
+    /* overflow-y: scroll; */
 }
 
 .right-container {
