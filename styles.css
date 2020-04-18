@@ -157,6 +157,128 @@ body {
 }
 
 
+.left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-heading{
+
+}    
+/* Latest Release Section Starts */
+
+.latest-release-container{
+    margin-top: 4%;
+    width: 80%;
+    height: 500px;
+    /* background-color: rgba(221, 244, 168, 0.12); */
+   
+}
+.inner-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.square-card{
+    margin: 10px 1px;
+    /* max-width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.album-image-box{
+    max-width: 100px;
+    max-height: 100px;
+    margin : 20px
+}
+
+.album-image-box img{
+    max-width: 100%;
+}
+
+.album-details-release{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.latest-side-controls{
+    margin: 0 40px;
+    
+}
+.latest-side-controls a{
+    text-decoration: none;
+    color: white;
+}
+ /* Latest Release Section Ends */
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    max-width: 80%;
+    margin: 0em auto;
+}
+
+.carousel ul {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.carousel li {
+    list-style: none;
+}
+
+.left-container .carousel div {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0em 5px;
+
+}
+
+.carousel img {
+    max-width: 100%;
+}
+
+.c-img-2 {
+    display: none;
+}
+
+
+.right-container,
+.aside {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -236,48 +358,6 @@ body {
 }
 
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel {
-    max-width: 80%;
-    margin: 0em auto;
-}
-
-.carousel ul {
-    display: flex;
-    /* justify-content: space-between; */
-}
-
-.carousel li {
-    list-style: none;
-}
-
-.left-container .carousel div {
-    max-width: 300px;
-    max-height: 300px;
-    margin: 0em 5px;
-
-}
-
-.carousel img {
-    max-width: 100%;
-}
-
-.c-img-2 {
-    display: none;
-}
-
-
-.right-container,
-.aside {
-    display: none;
-}
-
 @media screen and (min-width: 768px) {
     .container {
         flex-direction: row;
@@ -287,7 +367,10 @@ body {
 
     }
 
-    .left-container {}
+    
+    .left-container {
+        
+    
 
     flex-basis: 90%;
     flex-grow: 2;
@@ -303,6 +386,45 @@ body {
 .c-img-2 {
     display: block;
 }
+
+
+
+/* Latest Release */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -328,6 +450,7 @@ body {
     overflow-y: scroll;
     overflow-wrap: normal;
     /* overflow-x: hidden; */
+    scrollbar-width: none;
 }
 
 ol::-webkit-scrollbar {
