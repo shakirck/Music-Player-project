@@ -13,14 +13,27 @@
     box-sizing: border-box;
     margin: 0em;
     padding: 0em;
+    text-decoration: none;
+    font-family: "Montserrat",sans-serif;
+
+
+}
+a {
+    color: white;
 }
 
 body {
     background-color: var(--dark-theme-blue);
     color: white;
     font-family: 'Josefin Sans', sans-serif;
+    overflow :hidden;
+    position: relative;
 }
 
+
+main{
+    position: relative;
+}
 /* --------------------------------------- */
 
 /* NAVBAR */
@@ -165,6 +178,9 @@ body {
     overflow-y: scroll;
     scrollbar-width: none;
 }
+.scroll-hide::-webkit-scrollbar{
+    width: 0;
+}
 .section-heading{
 
 }    
@@ -251,12 +267,12 @@ body {
 
 
 /* Popular Artists */
-.popular-artists{
+/* .popular-artists{
     display: flex;
     flex-direction:column ;
     justify-content: center;
     align-content: center;
-}
+} */
 .row-container{
     /* margin: 15% ; */
     margin-top: 5%;
@@ -305,6 +321,8 @@ body {
 }
 
 /* Popualar Artist ENDS */
+
+
 
 
 
@@ -361,6 +379,110 @@ body {
 
 
 
+.max-width{
+   width:  110px;
+   /* height: 150px; */
+}
+.max-width img{
+    max-width: 100%;
+}
+/* Statons Starts */
+.station-container{
+    max-height: 500px;
+    width: 100%;
+}
+.station-row{
+    max-height: 500px;
+    background-color: #12193e;
+    
+}
+
+.station-row ul{
+    list-style: none;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.station-row li {
+    margin : 3%;
+    /* padding: %; */
+     /* margin-left: 1%; */
+}
+.box-round img{
+    border-radius:50%;
+}
+ 
+
+/* Section - Station Ends  */
+
+
+
+
+.genre-container{
+    font-size: 2.5rem;
+
+}
+.genre-row{
+    display: flex;
+    flex-direction: column;
+}
+.genre-box{
+    min-width: 18vw;
+    min-height: 150px;
+    flex-grow: 1;
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .7;
+    
+    /* margin-r:2%; */
+    /* background-color: blue; */
+}
+.pb-1{
+    /* background-color: red; */
+    background-image: url("./assets/images/image3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pb-2{
+    /* background-color: red; */
+    background-image: url("./assets/images/image2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pb-3{
+    /* background-color: red; */
+    background-image: url("./assets/images/image5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.genre-text-on-box{
+    font-family: "Montserrat",sans-serif;
+
+}
+
+@media screen and (min-width: 768px) {
+    .genre-row{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-width:  200px;
+        min-height: 200px;
+        /* padding: 0em %; */
+    }
+    .genre-box{
+        flex-grow: 1;
+
+        flex-basis: 33%;
+        flex-shrink: 1;
+    }
+}
+/* ENDS  PARTY SECTION */
 
 
 
@@ -370,13 +492,50 @@ body {
 
 
 
+/* LATEST SECTION */
 
 
 
 
+.latest-container{
+    margin-top: 5%;
+
+}
+.latest-row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.latest-box-width{
+    max-width:  150px;
+    /* height: 150px; */
+    flex-shrink: 1;
+    flex-grow: 2;
+    padding: 10px;
+    line-height: 1.1rem;
+ }
+ .latest-box-width img{
+     max-width: 100%;
+ }
+ .latest-box-width h6{
+    opacity: .7;
+ }
 
 
+ @media screen and (min-width: 768px) {
+    .latest-row{
+        /* justify-content: space-between; */
+    }
+    .latest-box-width{
+        max-width:  100px;
 
+        flex-grow: 5;
+    }
+
+
+}
+/* LATEST ENDS */
 @media screen and (min-width: 768px) {
     .fa-bell {
         display: inline-block !important;
@@ -478,9 +637,24 @@ body {
 
 
 
-/* Latest Release */
+ /* Music Player */
 
 
+ .music-player-container{
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+    position: absolute;
+    z-index: 11;
+    top: 77%;
+
+}
+
+
+
+
+
+ /* Music player ends */
 
 
 
@@ -524,9 +698,10 @@ body {
 .right-container {
     display: block;
 }
-.right-container::-webkit-scrollbar {
+/* .right-container::-webkit-scrollbar {
     display: none;
-}
+    width: 0;
+} */
 .aside-header-1{
     margin-right: 40px;
 }
@@ -542,10 +717,11 @@ body {
     scrollbar-width: none;
 }
 
+/* 
 ol::-webkit-scrollbar {
     display: none;
     width: 0 !important;
-}
+} */
 
 .queue-heading-box {
     display: flex;
@@ -623,19 +799,20 @@ ol::-webkit-scrollbar {
 .fa-heart{
 
 }
+
 ol {
     min-width: 370px;
     counter-reset: my-awesome-counter;
     list-style: none;
     margin-left: 5px;
     /* padding-left: 40px; */
-  }
-  ol li {
+}
+ol li {
     /* margin: 0 0 0.5rem 0; */
     counter-increment: my-awesome-counter;
     position: relative;
-  }
-  ol li::before {
+}
+ol li::before {
     content: counter(my-awesome-counter);
     /* color: #fcd000; */
     /* font-size: 1.5rem; */
@@ -654,5 +831,11 @@ ol {
     /* border-radius: 50%; */
     text-align: center;
     /* box-shadow: 1px 1px 0 #999; */
-  }
-  
+}
+
+
+}
+
+
+
+
