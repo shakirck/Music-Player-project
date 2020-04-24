@@ -2,518 +2,628 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="styles.css">
-   <script src="https://kit.fontawesome.com/c0bc4929da.js" crossorigin="anonymous"></script>
-
-   <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/c0bc4929da.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+  <title>Document</title>
 </head>
 
 <body>
-   <main>
-      
-      <nav class="navbar">
-         <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
-         </span>
-         <span class="nav-profile">
-            <div class="profile-img-box">
-               <a href="#"> <img src="./assets/images/profile.jpg" alt=""></a>
+
+
+
+  <main>
+
+
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+      <span class="nav-profile">
+        <div class="profile-img-box">
+          <a href="#"> <img src="./assets/images/profile.jpg" alt=""></a>
+        </div>
+      </span>
+      <a href="#" class="logo"><span style="font-size: 1.4rem;color:red">m</span>usic</a>
+      <ul class="main-nav" id="js-menu">
+        <div class="main-nav">
+          <li>
+            <a href="#" class="nav-links nav-fav">Favourites</a>
+          </li>
+        </div>
+        <div class="main-nav">
+          <li>
+            <form class="nav-search-box" action="">
+              <span> <i class="fas fa-search"></i></span>
+              <input class="nav-links nav-search" placeholder="Search..." type="text">
+            </form>
+          </li>
+        </div>
+        <div class="main-nav">
+          <li>
+            <a href="#"><i class="fas fa-bell"></i></a>
+          </li>
+
+
+
+    </nav>
+
+
+
+
+    <div class="container">
+
+      <div class="left-container scroll-hide">
+
+        <div class="carousel">
+          <ul>
+            <li>
+              <div class="carousel-img-box "><img class="carousel-img c-img-1 overlay-bright "
+                  src="./assets/images/camila.png " alt=""></div>
+            </li>
+            <li>
+              <div class="carousel-img-box "><img class="carousel-img c-img-2 overlay-bright "
+                  src="./assets/images/edsheeran.jpg" alt=""></div>
+            </li>
+            <li>
+              <div class="carousel-img-box "><img class="carousel-img c-img-3 overlay-bright "
+                  src="./assets/images/dualipa.png" alt=""></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="latest-release-container">
+
+          <div class="section-heading">
+            <h4>Latest Release</h4>
+            <div class="inner-container">
+
+              <div class="square-card">
+                <div class="album-image-box"><a href="#now-playing"><img src="./assets/images/album1.jpg" alt=""></div></a>
+                <div class="album-details-release">
+                  <h4>Feeling Good</h4>
+                  <h5>12 August 2010</h5>
+                </div>
+                <div class="latest-side-controls">
+                  <h1><a href="#">...</a></h1>
+                  <h6 class="duration">3:35</h6>
+                </div>
+              </div>
+
+              <div class="square-card">
+                <div class="album-image-box"><a href="#"><img src="./assets/images/album2.jpg" alt=""></div></a>
+                <div class="album-details-release">
+                  <h4>Feeling Good</h4>
+                  <h5>12 August 2010</h5>
+                </div>
+                <div class="latest-side-controls">
+                  <h1><a href="#">...</a></h1>
+                  <h6 class="duration">3:35</h6>
+                </div>
+              </div>
+              <div class="square-card">
+                <div class="album-image-box"><a href="#"><img src="./assets/images/album3.jpg" alt=""></div></a>
+                <div class="album-details-release">
+                  <h4>Feeling Good</h4>
+                  <h5>12 August 2010</h5>
+                </div>
+                <div class="latest-side-controls">
+                  <h1><a href="#">...</a></h1>
+                  <h6 class="duration">3:35</h6>
+                </div>
+              </div>
+
+              <div class="square-card">
+                <div class="album-image-box"><a href="#"><img src="./assets/images/album1.jpg" alt=""></div></a>
+                <div class="album-details-release">
+                  <h4>Feeling Good</h4>
+                  <h5>12 August 2010</h5>
+                </div>
+                <div class="latest-side-controls">
+                  <h1><a href="#">...</a></h1>
+                  <h6 class="duration">3:35</h6>
+                </div>
+              </div>
             </div>
-         </span>
-         <a href="#" class="logo"><span style="font-size: 1.4rem;color:red">m</span>usic</a>
-         <ul class="main-nav" id="js-menu">
-            <div class="main-nav">
-               <li>
-                  <a href="#" class="nav-links nav-fav">Favourites</a>
-               </li>
+          </div>
+
+
+
+
+          <div class="row-container">
+            <div class="section-heading=[=">
+              <h4>Popular Artists</h4>
             </div>
-            <div class="main-nav">
-               <li>
-                  <form class="nav-search-box" action="">
-                     <span> <i class="fas fa-search"></i></span>
-                     <input class="nav-links nav-search" placeholder="Search..." type="text">
-                  </form>
-               </li>
+            <ul>
+              <div class="artist-frame">
+                <li class="artist-box"> <a href="#"> <img src="./assets/images/camila.png" alt=""> </a> </li>
+                <h4>name</h4>
+              </div>
+
+
+              <div class="artist-frame">
+                <li class="artist-box"> <a href="#"> <img src="./assets/images/camila.png" alt=""> </a> </li>
+                <h4>name</h4>
+              </div>
+
+
+              <div class="artist-frame">
+                <li class="artist-box"> <a href="#"> <img src="./assets/images/edsheeran.jpg" alt=""> </a> </li>
+                <h4>name</h4>
+              </div>
+
+
+              <div class="artist-frame">
+                <li class="artist-box"> <a href="#"> <img src="./assets/images/dualipa.png" alt=""> </a> </li>
+                <h4>name</h4>
+              </div>
+
+              <div class="artist-frame">
+                <li class="artist-box"> <a href="#"> <img src="./assets/images/edsheeran.jpg" alt=""> </a> </li>
+                <h4>name</h4>
+              </div>
+
+              <div class="artist-frame ">
+                <li class="artist-box"> <a href="#"> <img src="./assets/images/dualipa.png" alt=""> </a> </li>
+                <h4>name</h4>
+              </div>
+
+            </ul>
+          </div>
+
+          <div class="station-container">
+            <div class="station-row">
+              <ul>
+                <li>
+                  <div class="max-width box-square"><a href="#"><img src="./assets/images/sections.png" alt=""></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="max-width box-round"><a href="#"><img src="./assets/images/calm.jpg" alt=""></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="max-width box-round"><a href="#"><img src="./assets/images/edm.jpg" alt=""></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="max-width box-round"><a href="#"><img src="./assets/images/radio.jpg" alt=""></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="max-width box-round"><a href="#"><img src="./assets/images/album1.jpg" alt=""></a></div>
+                </li>
+
+              </ul>
             </div>
-            <div class="main-nav">
-               <li>
-                  <a href="#"><i class="fas fa-bell"></i></a>
-               </li>
+          </div>
 
 
-
-      </nav>
-
-
-      <div class="music-player-container">
-         <div class="music-player">
-            111
-         </div>
-   </div>
-
-   
-
-      <div class="container">
-
-         <div class="left-container scroll-hide">
-
-            <div class="carousel">
-               <ul>
-                  <li>
-                     <div class="carousel-img-box "><img class="carousel-img c-img-1 overlay-bright "
-                           src="./assets/images/camila.png " alt=""></div>
-                  </li>
-                  <li>
-                     <div class="carousel-img-box "><img class="carousel-img c-img-2 overlay-bright "
-                           src="./assets/images/edsheeran.jpg" alt=""></div>
-                  </li>
-                  <li>
-                     <div class="carousel-img-box "><img class="carousel-img c-img-3 overlay-bright "
-                           src="./assets/images/dualipa.png" alt=""></div>
-                  </li>
-               </ul>
-            </div>
-
-            <div class="latest-release-container">
-
-               <div class="section-heading">
-                  <h4>Latest Release</h4>
-                  <div class="inner-container">
-                    
-                     <div class="square-card">
-                        <div class="album-image-box"><a href="#"><img src="./assets/images/album1.jpg" alt=""></div></a>
-                        <div class="album-details-release">
-                           <h4>Feeling Good</h4>
-                           <h5>12 August 2010</h5>
-                        </div>
-                        <div class="latest-side-controls">
-                           <h1><a href="#">...</a></h1>
-                           <h6 class="duration">3:35</h6>
-                        </div>
-                     </div>
-
-                     <div class="square-card">
-                        <div class="album-image-box"><a href="#"><img src="./assets/images/album2.jpg" alt=""></div></a>
-                        <div class="album-details-release">
-                           <h4>Feeling Good</h4>
-                           <h5>12 August 2010</h5>
-                        </div>
-                        <div class="latest-side-controls">
-                           <h1><a href="#">...</a></h1>
-                           <h6 class="duration">3:35</h6>
-                        </div>
-                     </div>
-                     <div class="square-card">
-                        <div class="album-image-box"><a href="#"><img src="./assets/images/album3.jpg" alt=""></div></a>
-                        <div class="album-details-release">
-                           <h4>Feeling Good</h4>
-                           <h5>12 August 2010</h5>
-                        </div>
-                        <div class="latest-side-controls">
-                           <h1><a href="#">...</a></h1>
-                           <h6 class="duration">3:35</h6>
-                        </div>
-                     </div>
-
-                     <div class="square-card">
-                        <div class="album-image-box"><a href="#"><img src="./assets/images/album1.jpg" alt=""></div></a>
-                        <div class="album-details-release">
-                           <h4>Feeling Good</h4>
-                           <h5>12 August 2010</h5>
-                        </div>
-                        <div class="latest-side-controls">
-                           <h1><a href="#">...</a></h1>
-                           <h6 class="duration">3:35</h6>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-
-
-
-               <div class="row-container">
-                  <div class="section-heading=[=">
-                     <h4>Popular Artists</h4>
-                  </div>  
-                  <ul>
-                    <div class="artist-frame">
-                     <li class="artist-box"> <a href="#">  <img src="./assets/images/camila.png" alt=""> </a> </li>
-                     <h4>name</h4>
-                    </div>
-
-
-                    <div class="artist-frame">
-                     <li class="artist-box"> <a href="#">  <img src="./assets/images/camila.png" alt=""> </a> </li>
-                     <h4>name</h4>
-                    </div>
-
-
-                    <div class="artist-frame">
-                     <li class="artist-box"> <a href="#">  <img src="./assets/images/edsheeran.jpg" alt=""> </a> </li>
-                     <h4>name</h4>
-                    </div>
-
-
-                    <div class="artist-frame">
-                     <li class="artist-box"> <a href="#">  <img src="./assets/images/dualipa.png" alt=""> </a> </li>
-                     <h4>name</h4>
-                    </div>
-
-                    <div class="artist-frame">
-                     <li class="artist-box"> <a href="#">  <img src="./assets/images/edsheeran.jpg" alt=""> </a> </li>
-                     <h4>name</h4>
-                    </div>
-
-                    <div class="artist-frame ">
-                     <li class="artist-box"> <a href="#">  <img src="./assets/images/dualipa.png" alt=""> </a> </li>
-                     <h4>name</h4>
-                    </div>
-                    
-                  </ul>
-               </div> 
-
-               <div class="station-container">
-                  <div class="station-row">
-                     <ul>
-                        <li><div class="max-width box-square"><a href="#"><img src="./assets/images/sections.png" alt=""></a></div></li>
-                        <li><div class="max-width box-round"><a href="#"><img src="./assets/images/calm.jpg" alt=""></a></div></li>
-                        <li><div class="max-width box-round"><a href="#"><img src="./assets/images/edm.jpg" alt=""></a></div></li>
-                        <li><div class="max-width box-round"><a href="#"><img src="./assets/images/radio.jpg" alt=""></a></div></li>
-                        <li><div class="max-width box-round"><a href="#"><img src="./assets/images/album1.jpg" alt=""></a></div></li>
-                        
-                     </ul>
-                  </div>
-               </div>
-
-
-               <div class="genre-container">
-                  <div class="genre-row">
-                     <a href=""><div class="genre-box pb-1" > <h4 class="genre-text-on-box" >PARTY</h4> </div></a>
-                     <a href=""><div class="genre-box pb-2" > <h4 class="genre-text-on-box" >ROCK</h4> </div></a>
-                     <a href=""><div class="genre-box pb-3" > <h4 class="genre-text-on-box" >EDM</h4> </div></a>
-
-                  </div>
-               </div>
-
-
-               <!-- LATEST SONGS IN DIFFERENT LANGUAGES SECTION  -->
-               <div class="latest-container">
-                  <div class="section-heading">
-                     <h4>Latest English</h4>
-                  </div>
-                  <div class="latest-row">
-                     <div class="latest-box-width ">
-                        <a href="#"><img src="./assets/images/latest1.jpg" alt=""></a>
-                        <h5>Queen</h5>
-                        <h6>12 April 2020</h6>
-                     </div>
-                     <div class="latest-box-width">
-                        <a href="#"><img src="./assets/images/latest4.jpg" alt=""></a>
-                        <h5>Queen</h5>
-                        <h6>12 April 2020</h6>
-                     </div>
-                     <div class="latest-box-width">
-                        <a href="#"><img src="./assets/images/album3.jpg" alt=""></a>
-                        <h5>Queen</h5>
-                        <h6>12 April 2020</h6>
-                     </div>
-                     <div class="latest-box-width">
-                        <a href="#"><img src="./assets/images/latest2.jpg" alt=""></a>
-                        <h5>Queen</h5>
-                        <h6>12 April 2020</h6>
-                     </div>
-                     <div class="latest-box-width">
-                        <a href="#"><img src="./assets/images/latest4.jpg" alt=""></a>
-                        <h5>Queen</h5>
-                        <h6>12 April 2020</h6>
-                     </div>
-                     <div class="latest-box-width">
-                        <a href="#"><img src="./assets/images/latest2.jpg" alt=""></a>
-                        <h5>Queen</h5>
-                        <h6>12 April 2020</h6>
-                     </div>
-                  </div>
-               </div>
-
-
-               <div class="latest-container">
-                  <div class="section-heading">
-                     <h4>Latest Malayalam</h4>
-                  </div>
-                  <div class="latest-row">
-                     <div class="latest-box-width ">
-                        <a href="#"><img src="./assets/images/malayalam.jpg" alt=""></a>
-                        <h5>Queen</h5>
-                        <h6>12 April 2020</h6>
-                     </div>
-                     <div class="latest-box-width">
-                        <a href="#"><img src="./assets/images/latest4.jpg" alt=""></a>
-                        <h5>Queen</h5>
-                        <h6>12 April 2020</h6>
-                     </div>
-                     <div class="latest-box-width">
-                        <a href="#"><img src="./assets/images/trance.jpg" alt=""></a>
-                        <h5>Queen</h5>
-                        <h6>12 April 2020</h6>
-                     </div>
-                     <div class="latest-box-width">
-                        <a href="#"><img src="./assets/images/latest2.jpg" alt=""></a>
-                        <h5>Queen</h5>
-                        <h6>12 April 2020</h6>
-                     </div>
-                     <div class="latest-box-width">
-                        <a href="#"><img src="./assets/images/trance2.jpeg" alt=""></a>
-                        <h5>Queen</h5>
-                        <h6>12 April 2020</h6>
-                     </div>
-                     <div class="latest-box-width">
-                        <a href="#"><img src="./assets/images/album1.jpg" alt=""></a>
-                        <h5>Queen</h5>
-                        <h6>12 April 2020</h6>
-                     </div>
-                  </div>
-               </div>
-
-
-
-               <div style="height: 300px;"></div>
+          <div class="genre-container">
+            <div class="genre-row">
+              <a href="">
+                <div class="genre-box pb-1">
+                  <h4 class="genre-text-on-box">PARTY</h4>
+                </div>
+              </a>
+              <a href="">
+                <div class="genre-box pb-2">
+                  <h4 class="genre-text-on-box">ROCK</h4>
+                </div>
+              </a>
+              <a href="">
+                <div class="genre-box pb-3">
+                  <h4 class="genre-text-on-box">EDM</h4>
+                </div>
+              </a>
 
             </div>
-             
+          </div>
 
 
-
-         </div>
-
-
-
-
-         <!-- SIDEBAR -->
-         <div class="right-container">
-            <div class="queue-heading-box">
-               <span class="aside-header-2">
-                  <h4>Queue</h4>
-               </span>
-               <span class="aside-header-1">
-                  <h6>Queue</h6>
-               </span>
+          <!-- LATEST SONGS IN DIFFERENT LANGUAGES SECTION  -->
+          <div class="latest-container">
+            <div class="section-heading">
+              <h4>Latest English</h4>
             </div>
-            <div class="aside scroll-hide">
+            <div class="latest-row">
+              <div class="latest-box-width ">
+                <img src="./assets/images/latest1.jpg" alt="">
+                <a href="#"><i class="fas fa-play"></i></a>
 
-               <div class="aside-content">
-                  <ol>
-
-                     <li class="side-row">
-                        <div class="album-img-thumbnail box">
-                           <a href="#"><img src="./assets/images/album1.jpg" alt=""></a>
-                        </div>
-                        <div class="song-details">
-                           <h4 class="s-name">Song Name</h4>
-                           <h5 class="s-artist">Artist</h5>
-                        </div>
-                        <div class="add-to-favourites">
-                           <a href="#"><i class="far fa-heart"></i></a>
-                        </div>
-                     </li>
-
-
-                     <li class="side-row">
-                        <div class="album-img-thumbnail box">
-                           <a href="#"><img src="./assets/images/album3.jpg" alt=""></a>
-                        </div>
-                        <div class="song-details">
-                           <h4 class="s-name">Song Name</h4>
-                           <h5 class="s-artist">Artist</h5>
-                        </div>
-                        <div class="add-to-favourites">
-                           <a href="#"><i class="far fa-heart"></i></a>
-                        </div>
-                     </li>
-
-
-
-
-                     <li class="side-row">
-                        <div class="album-img-thumbnail box">
-                           <a href="#"><img src="./assets/images/album4.jpg" alt=""></a>
-                        </div>
-                        <div class="song-details">
-                           <h4 class="s-name">Song Name</h4>
-                           <h5 class="s-artist">Artist</h5>
-                        </div>
-                        <div class="add-to-favourites">
-                           <a href="#"><i class="far fa-heart"></i></a>
-                        </div>
-                     </li>
-
-
-
-
-                     <li class="side-row">
-                        <div class="album-img-thumbnail box">
-                           <a href="#"><img src="./assets/images/album5.jpg" alt=""></a>
-                        </div>
-                        <div class="song-details">
-                           <h4 class="s-name">Song Name</h4>
-                           <h5 class="s-artist">Artist</h5>
-                        </div>
-                        <div class="add-to-favourites">
-                           <a href="#"><i class="far fa-heart"></i></a>
-                        </div>
-                     </li>
-
-
-                     <li class="side-row">
-                        <div class="album-img-thumbnail box">
-                           <a href="#"><img src="./assets/images/album1.jpg" alt=""></a>
-                        </div>
-                        <div class="song-details">
-                           <h4 class="s-name">Song Name</h4>
-                           <h5 class="s-artist">Artist</h5>
-                        </div>
-                        <div class="add-to-favourites">
-                           <a href="#"><i class="far fa-heart"></i></a>
-                        </div>
-                     </li>
-
-
-                     <li class="side-row">
-                        <div class="album-img-thumbnail box">
-                           <a href="#"><img src="./assets/images/album3.jpg" alt=""></a>
-                        </div>
-                        <div class="song-details">
-                           <h4 class="s-name">Song Name</h4>
-                           <h5 class="s-artist">Artist</h5>
-                        </div>
-                        <div class="add-to-favourites">
-                           <a href="#"><i class="far fa-heart"></i></a>
-                        </div>
-                     </li>
-
-
-
-
-                     <li class="side-row">
-                        <div class="album-img-thumbnail box">
-                           <a href="#"><img src="./assets/images/album4.jpg" alt=""></a>
-                        </div>
-                        <div class="song-details">
-                           <h4 class="s-name">Song Name</h4>
-                           <h5 class="s-artist">Artist</h5>
-                        </div>
-                        <div class="add-to-favourites">
-                           <a href="#"><i class="far fa-heart"></i></a>
-                        </div>
-                     </li>
-
-
-
-
-                     <li class="side-row">
-                        <div class="album-img-thumbnail box">
-                           <a href="#"><img src="./assets/images/album5.jpg" alt=""></a>
-                        </div>
-                        <div class="song-details">
-                           <h4 class="s-name">Song Name</h4>
-                           <h5 class="s-artist">Artist</h5>
-                        </div>
-                        <div class="add-to-favourites">
-                           <a href="#"><i class="far fa-heart"></i></a>
-                        </div>
-                     </li>
-
-
-
-
-
-                     <li class="side-row">
-                        <div class="album-img-thumbnail box">
-                           <a href="#"><img src="./assets/images/album1.jpg" alt=""></a>
-                        </div>
-                        <div class="song-details">
-                           <h4 class="s-name">Song Name</h4>
-                           <h5 class="s-artist">Artist</h5>
-                        </div>
-                        <div class="add-to-favourites">
-                           <a href="#"><i class="far fa-heart"></i></a>
-                        </div>
-                     </li>
-
-
-                     <li class="side-row">
-                        <div class="album-img-thumbnail box">
-                           <a href="#"><img src="./assets/images/album3.jpg" alt=""></a>
-                        </div>
-                        <div class="song-details">
-                           <h4 class="s-name">Song Name</h4>
-                           <h5 class="s-artist">Artist</h5>
-                        </div>
-                        <div class="add-to-favourites">
-                           <a href="#"><i class="far fa-heart"></i></a>
-                        </div>
-                     </li>
-
-
-
-
-                     <li class="side-row">
-                        <div class="album-img-thumbnail box">
-                           <a href="#"><img src="./assets/images/album4.jpg" alt=""></a>
-                        </div>
-                        <div class="song-details">
-                           <h4 class="s-name">Song Name</h4>
-                           <h5 class="s-artist">Artist</h5>
-                        </div>
-                        <div class="add-to-favourites">
-                           <a href="#"><i class="far fa-heart"></i></a>
-                        </div>
-                     </li>
-
-
-
-
-                     <li class="side-row">
-                        <div class="album-img-thumbnail box">
-                           <a href="#"><img src="./assets/images/album5.jpg" alt=""></a>
-                        </div>
-                        <div class="song-details">
-                           <h4 class="s-name">Song Name</h4>
-                           <h5 class="s-artist">Artist</h5>
-                        </div>
-                        <div class="add-to-favourites">
-                           <a href="#"><i class="far fa-heart"></i></a>
-                        </div>
-                     </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  </ol>
-               </div>
+                <h5>Queen</h5>
+                <h6>12 April 2020</h6>
+              </div>
+              <div class="latest-box-width">
+                <a href="#"><img src="./assets/images/latest4.jpg" alt=""></a>
+                <h5>Queen</h5>
+                <h6>12 April 2020</h6>
+              </div>
+              <div class="latest-box-width">
+                <a href="#"><img src="./assets/images/album3.jpg" alt=""></a>
+                <h5>Queen</h5>
+                <h6>12 April 2020</h6>
+              </div>
+              <div class="latest-box-width">
+                <a href="#"><img src="./assets/images/latest2.jpg" alt=""></a>
+                <h5>Queen</h5>
+                <h6>12 April 2020</h6>
+              </div>
+              <div class="latest-box-width">
+                <a href="#"><img src="./assets/images/latest4.jpg" alt=""></a>
+                <h5>Queen</h5>
+                <h6>12 April 2020</h6>
+              </div>
+              <div class="latest-box-width">
+                <a href="#"><img src="./assets/images/latest2.jpg" alt=""></a>
+                <h5>Queen</h5>
+                <h6>12 April 2020</h6>
+              </div>
             </div>
-         </div>
+          </div>
+
+
+          <div class="latest-container">
+            <div class="section-heading">
+              <h4>Latest Malayalam</h4>
+            </div>
+            <div class="latest-row">
+              <div class="latest-box-width ">
+                <a href="#"><img src="./assets/images/malayalam.jpg" alt=""></a>
+                <h5>Queen</h5>
+                <h6>12 April 2020</h6>
+              </div>
+              <div class="latest-box-width">
+                <a href="#"><img src="./assets/images/latest4.jpg" alt=""></a>
+                <h5>Queen</h5>
+                <h6>12 April 2020</h6>
+              </div>
+              <div class="latest-box-width">
+                <a href="#"><img src="./assets/images/trance.jpg" alt=""></a>
+                <h5>Queen</h5>
+                <h6>12 April 2020</h6>
+              </div>
+              <div class="latest-box-width">
+                <a href="#"><img src="./assets/images/latest2.jpg" alt=""></a>
+                <h5>Queen</h5>
+                <h6>12 April 2020</h6>
+              </div>
+              <div class="latest-box-width">
+                <a href="#"><img src="./assets/images/trance2.jpeg" alt=""></a>
+                <h5>Queen</h5>
+                <h6>12 April 2020</h6>
+              </div>
+              <div class="latest-box-width">
+                <a href="#"><img src="./assets/images/album1.jpg" alt=""></a>
+                <h5>Queen</h5>
+                <h6>12 April 2020</h6>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div style="height: 300px;"></div>
+
+        </div>
+
+
+
+
       </div>
 
 
 
 
-   
-   </main>
+      <!-- SIDEBAR -->
+      <div class="right-container">
+        <div class="queue-heading-box">
+          <span class="aside-header-2">
+            <h4>Queue</h4>
+          </span>
+          <span class="aside-header-1">
+            <h6>Queue</h6>
+          </span>
+        </div>
+        <div class="aside scroll-hide">
 
-   <script src="https://kit.fontawesome.com/c0bc4929da.js" crossorigin="anonymous"></script>
+          <div class="aside-content">
+            <ol>
+
+              <li class="side-row">
+                <div class="album-img-thumbnail box">
+                  <a href="#"><img src="./assets/images/album1.jpg" alt=""></a>
+                </div>
+                <div class="song-details">
+                  <h4 class="s-name">Song Name</h4>
+                  <h5 class="s-artist">Artist</h5>
+                </div>
+                <div class="add-to-favourites">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </li>
+
+
+              <li class="side-row">
+                <div class="album-img-thumbnail box">
+                  <a href="#"><img src="./assets/images/album3.jpg" alt=""></a>
+                </div>
+                <div class="song-details">
+                  <h4 class="s-name">Song Name</h4>
+                  <h5 class="s-artist">Artist</h5>
+                </div>
+                <div class="add-to-favourites">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </li>
+
+
+
+
+              <li class="side-row">
+                <div class="album-img-thumbnail box">
+                  <a href="#"><img src="./assets/images/album4.jpg" alt=""></a>
+                </div>
+                <div class="song-details">
+                  <h4 class="s-name">Song Name</h4>
+                  <h5 class="s-artist">Artist</h5>
+                </div>
+                <div class="add-to-favourites">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </li>
+
+
+
+
+              <li class="side-row">
+                <div class="album-img-thumbnail box">
+                  <a href="#"><img src="./assets/images/album5.jpg" alt=""></a>
+                </div>
+                <div class="song-details">
+                  <h4 class="s-name">Song Name</h4>
+                  <h5 class="s-artist">Artist</h5>
+                </div>
+                <div class="add-to-favourites">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </li>
+
+
+              <li class="side-row">
+                <div class="album-img-thumbnail box">
+                  <a href="#"><img src="./assets/images/album1.jpg" alt=""></a>
+                </div>
+                <div class="song-details">
+                  <h4 class="s-name">Song Name</h4>
+                  <h5 class="s-artist">Artist</h5>
+                </div>
+                <div class="add-to-favourites">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </li>
+
+
+              <li class="side-row">
+                <div class="album-img-thumbnail box">
+                  <a href="#"><img src="./assets/images/album3.jpg" alt=""></a>
+                </div>
+                <div class="song-details">
+                  <h4 class="s-name">Song Name</h4>
+                  <h5 class="s-artist">Artist</h5>
+                </div>
+                <div class="add-to-favourites">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </li>
+
+
+
+
+              <li class="side-row">
+                <div class="album-img-thumbnail box">
+                  <a href="#"><img src="./assets/images/album4.jpg" alt=""></a>
+                </div>
+                <div class="song-details">
+                  <h4 class="s-name">Song Name</h4>
+                  <h5 class="s-artist">Artist</h5>
+                </div>
+                <div class="add-to-favourites">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </li>
+
+
+
+
+              <li class="side-row">
+                <div class="album-img-thumbnail box">
+                  <a href="#"><img src="./assets/images/album5.jpg" alt=""></a>
+                </div>
+                <div class="song-details">
+                  <h4 class="s-name">Song Name</h4>
+                  <h5 class="s-artist">Artist</h5>
+                </div>
+                <div class="add-to-favourites">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </li>
+
+
+
+
+
+              <li class="side-row">
+                <div class="album-img-thumbnail box">
+                  <a href="#"><img src="./assets/images/album1.jpg" alt=""></a>
+                </div>
+                <div class="song-details">
+                  <h4 class="s-name">Song Name</h4>
+                  <h5 class="s-artist">Artist</h5>
+                </div>
+                <div class="add-to-favourites">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </li>
+
+
+              <li class="side-row">
+                <div class="album-img-thumbnail box">
+                  <a href="#"><img src="./assets/images/album3.jpg" alt=""></a>
+                </div>
+                <div class="song-details">
+                  <h4 class="s-name">Song Name</h4>
+                  <h5 class="s-artist">Artist</h5>
+                </div>
+                <div class="add-to-favourites">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </li>
+
+
+
+
+              <li class="side-row">
+                <div class="album-img-thumbnail box">
+                  <a href="#"><img src="./assets/images/album4.jpg" alt=""></a>
+                </div>
+                <div class="song-details">
+                  <h4 class="s-name">Song Name</h4>
+                  <h5 class="s-artist">Artist</h5>
+                </div>
+                <div class="add-to-favourites">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </li>
+
+
+
+
+              <li class="side-row">
+                <div class="album-img-thumbnail box">
+                  <a href="#"><img src="./assets/images/album5.jpg" alt=""></a>
+                </div>
+                <div class="song-details">
+                  <h4 class="s-name">Song Name</h4>
+                  <h5 class="s-artist">Artist</h5>
+                </div>
+                <div class="add-to-favourites">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+              </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ol>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+  <div class="bottom-now-playing-bar " id="now-playing">
+
+    <div class="bottom-now-playing-left">
+      <div class="bottom-now-playing-left-col-song">
+        <div class="bottom-now-playing-left-col-song-image">
+          <img src="./assets/images/album1.jpg" alt="">
+        </div>
+        <div class="bottom-now-playing-left-col-song-details hide-responsive">
+          <div class="bottom-now-playing-left-song-details-container">
+            <a href="#" class="bottom-now-playing-left-song-details-song-title">Something</a>
+          </div>
+          <div class="bottom-now-playing-left-song-details-container">
+            <a href="#" class="bottom-now-playing-left-song-details-song-artist">Else</a>
+          </div>
+        </div>
+        <div class="bottom-now-playing-left-col-actions">
+          <button class="bottom-left-action-fav">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+      </div>
+
+     
+    </div>
+
+    <div class="bottom-now-playing-middle">
+      <div class="now-playing-middle-col">
+        <div class="now-playing-middle-col-controls">
+          <button class="now-playing-shuffle control-btns">
+            <i class="fas fa-random"></i>          </button>
+          <button class="now-playing-prev control-btns">
+            <i class="fas fa-step-forward"></i>
+          </button>
+          <button class="now-playing-play-pause control-btns">
+            <i class="far fa-play-circle"></i>
+          </button>
+          <button class="now-playing-next control-btns">
+            <i class="fas fa-step-backward"></i>
+          </button>
+          <button class="now-playing-repeat control-btns">
+            <i class="fas fa-sync-alt"></i>
+          </button>
+        </div>
+        <div class="now-playing-middle-col-progress">
+          <div class="progress-bar slidecontainer ">
+            <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-now-playing-right">
+      <div class="bottom-now-playing-right-col">
+        <div class="bottom-now-playing-right-col-controls">
+          <button class="now-playing-repeat control-btns">
+            <i class="lni lni-list"></i>
+          </button>
+          <button class="now-playing-repeat control-btns">
+            <i class="lni lni-laptop-phone"></i>        
+            </button>
+          <div class="voume-control slidecontainer">
+            <input type="range" min="1" max="100" value="100" class="slider slider-volume" id="myRange">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    
+  </div>
+
+  <!-- <img src="http://via.placeholder.com/150x150" alt=""> -->
+  <script src="https://kit.fontawesome.com/c0bc4929da.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
