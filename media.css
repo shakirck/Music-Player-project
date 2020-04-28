@@ -1,0 +1,308 @@
+@media screen and (min-width: 768px) {
+
+
+
+
+
+    /* NAV */
+
+    .fa-bell {
+        display: inline-block !important;
+        margin-left: 00px;
+        position: absolute;
+        top: 27px;
+        font-size: 1.5rem;
+        left: 85%;
+    }
+
+    .fa-search {
+        left: 50px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+        align-content: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        line-height: .2em;
+        padding-top: 10px;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+        top: 15px;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .nav-fav {
+        flex-basis: 30%;
+        margin-right: 10vw;
+
+    }
+
+    .nav-profile {
+
+        top: 0;
+        left: 90%;
+    }
+
+/* ----- */
+    
+    .track-image img{
+        width: 100%;
+        padding: 5px;
+        margin-right: 0;
+    }
+
+
+
+
+    .square-card {
+        flex-basis: 45%;
+    }
+
+    .album-image-box {
+        min-width: 60px;
+        flex-shrink: 1;
+    }
+
+
+    .autohide {
+        display: block;
+    }
+
+
+
+
+
+
+    .genre-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-width: 200px;
+        min-height: 200px;
+        /* padding: 0em %; */
+    }
+
+    .genre-box {
+        flex-grow: 1;
+
+        flex-basis: 33%;
+        flex-shrink: 1;
+    }
+
+
+
+
+
+    
+    /* bottom: 121px; */
+    /* @media */
+    .hide-responsive {
+        display: block;
+    }
+
+    .slider-volume {
+        rotate: 0deg;
+
+    }
+
+    .bottom-now-playing-right-col-controls button {
+        margin: 5px;
+    }
+
+    .now-playing-middle-col-controls {
+        display: flex;
+        justify-content: center;
+
+
+    }
+    .control-btns-icons-now-playing{
+        margin: 0px 15px;
+        font-size: .9rem;
+        opacity: .8;
+        cursor: pointer;
+    }
+    .control-btns-icons-now-playing:hover{
+        opacity: 1;
+        
+
+    }
+ 
+    .now-playing-middle-col-controls button {
+
+        font-size: 1.2rem;
+
+        transition: all .5s ease-in;
+
+    }
+
+    .fa-play-circle {
+        font-size: 2rem;
+        transition: all .3s ease-in;
+    }
+
+    .bottom-now-playing-right-col-controls {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider-volume {
+        width: 90px !important;
+        /* rotate: 270deg; */
+        /* transition: rotate 1s ease-in; */
+    }
+
+
+
+
+    /* .latest-row{
+        /* justify-content: space-between; */
+
+        .latest-box-width {
+            max-width: 100px;
+    
+            flex-grow: 5;
+        }
+        .widthauto{
+             width:80px;
+            height: 80px;
+            /* top: 10px; */
+            /* left: 10px; */
+            /* right:10px; */
+            /* bottom: 10px; */
+        }
+        .position-adjust-center{
+            left:0px;
+            top:0px
+        }
+
+
+
+        .container {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 50px;
+    
+        }
+    
+    
+        .left-container {
+    
+            flex-basis: 100%;
+            flex-grow: 2;
+            /* overflow-y: scroll; */
+        }
+    
+        .right-container {
+            flex-basis: 20%;
+            flex-shrink: 1;
+            /* flex-grow: 1; */
+        }
+    
+    
+    
+        .c-img-2 {
+            display: block;
+        }
+
+        
+
+        /* width: 0px; */
+    .playlist-section-container > .playlist-left{
+        width: 50%;
+        /* margin-left: -300px; */
+        display: flex;
+    }
+    .playlist-right{
+        /* flex-basis: 50%; */
+    }
+    .playlist-section-container{
+    justify-content: space-between;
+    }
+     .playlist-left{
+         background-color: #282828;
+         background-image: url("./assets/images/dualipa.png");
+         background-position: center;
+         background-size: cover;
+         /* background-clip: border-box; */
+         background-attachment: scroll;
+     }
+
+
+     
+}
+
+
+
+@media screen and (min-width: 768px) {
+    
+
+}
+
+@media screen and (min-width:768px) {
+   
+}
+@media screen and (min-width: 768px) {
+   
+}
+
+
+@media screen and (min-width: 768px) {
+    
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+   
+
+}
+
+@media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width: 768px) {
+   
+}
+
+
+@media screen and (min-width: 768px) {
+    
+} 
